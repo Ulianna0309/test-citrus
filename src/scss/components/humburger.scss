@@ -13,8 +13,8 @@
   }
 
   &:focus-visible {
-    outline: 10px solid #eee;
-    background-color: #eee;
+    outline: none;
+    background-color: transparent;
   }
 
   &__line {

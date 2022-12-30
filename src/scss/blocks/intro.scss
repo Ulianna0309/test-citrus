@@ -39,6 +39,11 @@
 
   &__block{
     &-desc{
+      margin-left: 0;
+
+      @media (min-width: $media-tab-lg) {
+        margin-left: 60px;
+      }
      text-align: left;
     }
   }
