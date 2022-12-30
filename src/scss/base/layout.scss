@@ -1,0 +1,89 @@
+.v-container {
+  width: 100%;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  @media (min-width: $media-tab-sm) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  @media (min-width: $media-des-md) {
+    padding-left: calc((100% - 1140px) / 2);
+    padding-right: calc((100% - 1140px) / 2);
+  }
+
+  @media (min-width: $media-des-lg) {
+    padding-left: calc((100% - 1440px) / 2);
+    padding-right: calc((100% - 1440px) / 2);
+  }
+}
+
+
+.v-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+
+  @media (min-width: $media-tab-lg) {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  @media (min-width: $media-des-sm) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+// mobile
+.v-col {
+  flex-basis: 100%;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-right: 8px;
+  padding-left: 8px;
+
+  @media (min-width: $media-tab-lg) {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  @media (min-width: $media-des-sm) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+
+// tablet
+@media (min-width: $media-tab-sm) {
+  @for $i from 1 through 12 {
+    .v-col-sm-#{$i} {
+      flex: 0 0 calc((100% / 12) * #{$i});
+      max-width: calc((100% / 12) * #{$i});
+    }
+  }
+}
+
+// large tablet
+@media (min-width: $media-tab-lg) {
+  @for $i from 1 through 12 {
+    .v-col-lg-#{$i} {
+      flex: 0 0 calc((100% / 12) * #{$i});
+      max-width: calc((100% / 12) * #{$i});
+    }
+  }
+}
+
+// desktop
+@media (min-width: $media-des-md) {
+  @for $i from 1 through 12 {
+    .v-col-xlg-#{$i} {
+      flex: 0 0 calc((100% / 12) * #{$i});
+      max-width: calc((100% / 12) * #{$i});
+    }
+  }
+}
+

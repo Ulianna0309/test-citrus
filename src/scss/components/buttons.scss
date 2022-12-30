@@ -1,0 +1,89 @@
+.btn__scroll{
+  background-color: $dark;
+  border-radius: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  line-height: 120%;
+  padding: 18px 15px;
+  transition: opacity $fast-animation;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: $yellow;
+  max-width: 80px;
+  @include flexible-font-size(14,18);
+
+  @media (min-width: $media-tab-lg) {
+    max-width: 103px;
+  }
+
+  &-icon{
+    background-color: $yellow;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $media-tab-lg) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
+}
+
+.btn__round{
+  padding: 6px 43px 5px;
+  border-radius: 33px;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.09;
+  display: inline-block;
+  transition: transform $fast-animation;
+
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    transform: scale(1.2);
+  }
+
+  &:focus-visible {
+    transform: scale(1.2);
+  }
+
+  &--orange{
+    background-color: $yellow;
+    color: $dark;
+  }
+
+  &--dark{
+    background-color: $dark;
+    color: $white;
+  }
+}
+
