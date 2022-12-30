@@ -4,13 +4,13 @@
   padding-right: 22px;
 
   @media (min-width: $media-tab-sm) {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: $media-des-md) {
-    padding-left: calc((100% - 1140px) / 2);
-    padding-right: calc((100% - 1140px) / 2);
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
   }
 
   @media (min-width: $media-des-lg) {
