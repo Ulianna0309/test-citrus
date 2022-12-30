@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
  
 
   &--open {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
 
     .hamburger__line {
       background-color: $yellow;

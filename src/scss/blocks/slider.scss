@@ -152,19 +152,25 @@
             @include non-select;
 
             &:after{
-            content: '';
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='18.333' height='24.236' viewBox='0 0 18.333 24.236'%3e%3cpath id='Path_95' data-name='Path 95' d='M1008.714,589.88l11.116,8.921-11.116,6.963' transform='translate(-1004.496 -585.663)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='6'/%3e%3c/svg%3e ");
-            height: 18px;
-            width: 12px;
-            background-repeat: no-repeat;
-            background-size: contain;
+                content: '';
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='18.333' height='24.236' viewBox='0 0 18.333 24.236'%3e%3cpath id='Path_95' data-name='Path 95' d='M1008.714,589.88l11.116,8.921-11.116,6.963' transform='translate(-1004.496 -585.663)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='6'/%3e%3c/svg%3e ");
+                height: 18px;
+                width: 12px;
+                background-repeat: no-repeat;
+                background-size: contain;
             }
         }
 
         .swiper-button-prev{
+            left: -8px;
+
             &:after{
-            transform: rotate(180deg);
+               transform: rotate(180deg);
             }
+        }
+
+        .swiper-button-next{
+            right: 8px;
         }
     }
 }
